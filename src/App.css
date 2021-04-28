@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  padding: 0 2rem;
+  position: relative;
+}
