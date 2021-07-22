@@ -1,19 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Bar, Pie} from 'react-chartjs-2'
 
 
 
 function Chart() {
+
+const [label,setLabel]=useState("% of voting")
+    const [datas,setdatas]=useState(['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'])
     return (
         <div>
             <Pie
-            
-           
 data={{
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: datas,
   datasets:[
     {
-label: "% of votes",
+label: label,
 data: [12,54,24,65,45,2],
 backgroundColor: [
     'rgba(255, 99, 132, 1)',
